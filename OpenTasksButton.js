@@ -4,8 +4,8 @@ tasks_id = sessionStorage.getItem("tasks_id");
 if (tasks_id == null) {
 var xhr = new XMLHttpRequest();
 
-xhr.open("GET", "https://apistore360-qua.luxottica.com/svtapi/survey_task?visit_id=" + visit_id + "&survey_id=" + survey_id + "", false);
-xhr.setRequestHeader("Authorization", "Basic REVWX1VTRVI6cWkkOEIyZm4=");
+xhr.open("GET", "https://apistore360.luxottica.com/svtapi/survey_task?visit_id=" + visit_id + "&survey_id=" + survey_id + "", false);
+xhr.setRequestHeader("Authorization", "Basic UFJPRF9VU0VSOmQ4MG1aaCRh");
 
 xhr.send(null);
 if (xhr.status === 200) {
